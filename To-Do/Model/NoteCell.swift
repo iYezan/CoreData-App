@@ -8,27 +8,23 @@
 import UIKit
 
 class NoteCell: UITableViewCell {
-
+    
     static let id = "NoteCell"
     private var note: Note?
     var dateLabel: UILabel!
-    
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
-        configure()
-        
+        self.backgroundColor = .systemBackground
+        textLabel?.font = .systemFont(ofSize: 24, weight: .semibold)
+        detailTextLabel?.font = .systemFont(ofSize: 20, weight: .regular)
+        setupDateLabel()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError()
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -37,16 +33,31 @@ class NoteCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
     }
-
-    private func configure() {
-        self.backgroundColor    = .systemBackground
-        textLabel?.font         = .systemFont(ofSize: 24, weight: .semibold)
-        detailTextLabel?.font = .systemFont(ofSize: 20, weight: .regular)
-    }
     
+    private func setupDateLabel() {
+        dateLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 74, height: 50))
+        dateLabel.textAlignment = .right
+        accessoryView = dateLabel
+
+        dateLabel.textColor = .gray
+        dateLabel.font = .systemFont(ofSize: 14)
+    }
+        
     func configureLabels() {
         self.textLabel?.text = note?.title ?? ""
         self.detailTextLabel?.text = note?.text ?? ""
+        
+//        let components = Calendar.current.dateComponents([.second, .minute, .hour, .day, .month, .year], from: .now)
+//        let dateNow = Calendar.current.date(from: components)
+        
+        
+//        if Date.isToday(day: self.dateComponentsNow.day!) {
+//            dateLabel.text = "\(dateComponentsNow.hour!):\(dateComponentsNow.minute!)"
+//        } else if Date.isThisYear(year: self.dateComponentsNow.year!) {
+//            dateLabel.text = "\(dateComponentsNow.day!).\(dateComponentsNow.month!)"
+//        } else {
+//            dateLabel.text = "\(dateComponentsNow.day!).\(dateComponentsNow.month!).\(dateComponentsNow.year!)"
+//        }
         
         guard let note = note else {
             print("Found nil value in variable note")

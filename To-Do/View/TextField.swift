@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TextField: UITextField {
+class CustomTextField: UITextField {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

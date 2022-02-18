@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TextView: UITextView {
+class CustomtextView: UITextView {
 
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)

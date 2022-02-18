@@ -27,13 +27,16 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Item.mockData.count
+        return MainVC.notes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NoteCell.id, for: indexPath)
-        cell.textLabel?.text    = mockdata[indexPath.row].name
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NoteCell.id, for: indexPath) as? NoteCell else {
+            return UITableViewCell()
+        }
+        cell.configure(note: MainVC.notes[indexPath.row])
+        cell.configureLabels()
+        cell.selectionStyle = .none
         return cell
     }
 }
-
