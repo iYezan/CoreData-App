@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C6BED8627BD931600FFC882 /* CoreData-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6BED8627BD931600FFC882 /* To-Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6BED8927BD931600FFC882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6BED8B27BD931600FFC882 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C6BED8D27BD931600FFC882 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		2C6BED7D27BD931600FFC882 = {
 			isa = PBXGroup;
 			children = (
-				2C6BED8827BD931600FFC882 /* CoreData-App */,
+				2C6BED8827BD931600FFC882 /* To-Do */,
 				2C6BED8727BD931600FFC882 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,12 +70,12 @@
 		2C6BED8727BD931600FFC882 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C6BED8627BD931600FFC882 /* CoreData-App.app */,
+				2C6BED8627BD931600FFC882 /* To-Do.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C6BED8827BD931600FFC882 /* CoreData-App */ = {
+		2C6BED8827BD931600FFC882 /* To-Do */ = {
 			isa = PBXGroup;
 			children = (
 				2C6BEDA427BD9BA500FFC882 /* Model */,
@@ -88,7 +88,7 @@
 				2C6BED9727BD931800FFC882 /* Info.plist */,
 				2C6BEDB627BDC1AD00FFC882 /* Extensions.swift */,
 			);
-			path = "CoreData-App";
+			path = "To-Do";
 			sourceTree = "<group>";
 		};
 		2C6BEDA427BD9BA500FFC882 /* Model */ = {
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C6BED8527BD931600FFC882 /* CoreData-App */ = {
+		2C6BED8527BD931600FFC882 /* To-Do */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C6BED9A27BD931800FFC882 /* Build configuration list for PBXNativeTarget "CoreData-App" */;
+			buildConfigurationList = 2C6BED9A27BD931800FFC882 /* Build configuration list for PBXNativeTarget "To-Do" */;
 			buildPhases = (
 				2C6BED8227BD931600FFC882 /* Sources */,
 				2C6BED8327BD931600FFC882 /* Frameworks */,
@@ -147,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = "CoreData-App";
+			name = "To-Do";
 			productName = "CoreData-App";
-			productReference = 2C6BED8627BD931600FFC882 /* CoreData-App.app */;
+			productReference = 2C6BED8627BD931600FFC882 /* To-Do.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C6BED8127BD931600FFC882 /* Build configuration list for PBXProject "CoreData-App" */;
+			buildConfigurationList = 2C6BED8127BD931600FFC882 /* Build configuration list for PBXProject "To-Do" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -180,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C6BED8527BD931600FFC882 /* CoreData-App */,
+				2C6BED8527BD931600FFC882 /* To-Do */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +360,7 @@
 				DEVELOPMENT_TEAM = XT6726KZ8H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CoreData-App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "To-Do";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -369,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iyezanApp.CoreData-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iyezanApp.To-Do";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -387,6 +388,7 @@
 				DEVELOPMENT_TEAM = XT6726KZ8H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CoreData-App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "To-Do";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -396,7 +398,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iyezanApp.CoreData-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iyezanApp.To-Do";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -407,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C6BED8127BD931600FFC882 /* Build configuration list for PBXProject "CoreData-App" */ = {
+		2C6BED8127BD931600FFC882 /* Build configuration list for PBXProject "To-Do" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C6BED9827BD931800FFC882 /* Debug */,
@@ -416,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C6BED9A27BD931800FFC882 /* Build configuration list for PBXNativeTarget "CoreData-App" */ = {
+		2C6BED9A27BD931800FFC882 /* Build configuration list for PBXNativeTarget "To-Do" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C6BED9B27BD931800FFC882 /* Debug */,
