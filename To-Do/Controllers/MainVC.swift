@@ -7,11 +7,14 @@
 
 import UIKit
 
-class MainVC: UIViewController {
-
+class MainVC: UIViewController, UISearchResultsUpdating {
+ 
+    var searchedItmes = [Note]()
     static var notes = [Note]()
     // var item = Item.mockData // Item model
-        
+    
+    var searchController  = UISearchController(searchResultsController: nil)
+    
     var tableView: UITableView?
     let label = UILabel()            // Appears if there's no notes yet
     let button = AddButton()         // Button at the botttom right corner
@@ -19,14 +22,14 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        definesPresentationContext = true
         
-        title = "Todo"
+        setupNavigationController()
         
         setupTableView()
         setupButton()
         setupLabel()
         fetchNotesFromStorage()
+        searchBar()
     }
     
     // Call NoteVC 1
@@ -66,6 +69,25 @@ class MainVC: UIViewController {
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+    }
+    
+    private func setupNavigationController() {
+        title = "Todo"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = .systemBackground
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.hidesBarsOnSwipe = false
+        navigationItem.hidesSearchBarWhenScrolling = false
+       
+    }
+    
+    // SearchBar design
+    func searchBar() {
+        searchController.searchResultsUpdater                   = self
+        searchController.obscuresBackgroundDuringPresentation   = false
+        searchController.searchBar.placeholder                  = "Search"
+        navigationItem.searchController                         = searchController
+        definesPresentationContext                              = true
     }
 }
 

@@ -21,7 +21,6 @@ extension UILabel {
     }
 }
 
-
 extension Date {
     static func isToday(day: Int) -> Bool {
         return Calendar.current.dateComponents([.day], from: .now).day == day
