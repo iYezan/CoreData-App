@@ -14,7 +14,7 @@
 		2C6BED9627BD931800FFC882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6BED9427BD931800FFC882 /* LaunchScreen.storyboard */; };
 		2C6BED9F27BD95CA00FFC882 /* MyNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BED9D27BD95CA00FFC882 /* MyNotes.xcdatamodeld */; };
 		2C6BEDA127BD966800FFC882 /* CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDA027BD966800FFC882 /* CoreDataProperties.swift */; };
-		2C6BEDA827BD9C1200FFC882 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDA727BD9C1200FFC882 /* TextField.swift */; };
+		2C6BEDA827BD9C1200FFC882 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDA727BD9C1200FFC882 /* CustomTextField.swift */; };
 		2C6BEDAA27BD9EEB00FFC882 /* CustomtextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDA927BD9EEB00FFC882 /* CustomtextView.swift */; };
 		2C6BEDAC27BDA1FF00FFC882 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDAB27BDA1FF00FFC882 /* AddButton.swift */; };
 		2C6BEDAF27BDA49800FFC882 /* NoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDAE27BDA49800FFC882 /* NoteVC.swift */; };
@@ -22,8 +22,10 @@
 		2C6BEDB327BDBC1600FFC882 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDB227BDBC1600FFC882 /* Note+CoreDataClass.swift */; };
 		2C6BEDB527BDBEC100FFC882 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDB427BDBEC100FFC882 /* NoteCell.swift */; };
 		2C6BEDB727BDC1AD00FFC882 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDB627BDC1AD00FFC882 /* Extensions.swift */; };
-		2C6BEDB927BE994000FFC882 /* TabeViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDB827BE994000FFC882 /* TabeViewManager.swift */; };
+		2C6BEDB927BE994000FFC882 /* Ext+TabeViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDB827BE994000FFC882 /* Ext+TabeViewManager.swift */; };
 		2C6BEDBD27BF20AC00FFC882 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6BEDBC27BF20AC00FFC882 /* Item.swift */; };
+		2CB87F3527C0997400821294 /* Ext+NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB87F3427C0997400821294 /* Ext+NoteCell.swift */; };
+		2CB87F3727C09F2300821294 /* Ext+NoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB87F3627C09F2300821294 /* Ext+NoteVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +38,7 @@
 		2C6BED9727BD931800FFC882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6BED9E27BD95CA00FFC882 /* MyNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyNotes.xcdatamodel; sourceTree = "<group>"; };
 		2C6BEDA027BD966800FFC882 /* CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProperties.swift; sourceTree = "<group>"; };
-		2C6BEDA727BD9C1200FFC882 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		2C6BEDA727BD9C1200FFC882 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		2C6BEDA927BD9EEB00FFC882 /* CustomtextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomtextView.swift; sourceTree = "<group>"; };
 		2C6BEDAB27BDA1FF00FFC882 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		2C6BEDAE27BDA49800FFC882 /* NoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteVC.swift; sourceTree = "<group>"; };
@@ -44,8 +46,10 @@
 		2C6BEDB227BDBC1600FFC882 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2C6BEDB427BDBEC100FFC882 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		2C6BEDB627BDC1AD00FFC882 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		2C6BEDB827BE994000FFC882 /* TabeViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabeViewManager.swift; sourceTree = "<group>"; };
+		2C6BEDB827BE994000FFC882 /* Ext+TabeViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+TabeViewManager.swift"; sourceTree = "<group>"; };
 		2C6BEDBC27BF20AC00FFC882 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2CB87F3427C0997400821294 /* Ext+NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+NoteCell.swift"; sourceTree = "<group>"; };
+		2CB87F3627C09F2300821294 /* Ext+NoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+NoteVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,15 +82,15 @@
 		2C6BED8827BD931600FFC882 /* To-Do */ = {
 			isa = PBXGroup;
 			children = (
+				2C6BEDA527BD9BB300FFC882 /* Support */,
+				2CB87F3327C0727300821294 /* Extensions */,
 				2C6BEDA427BD9BA500FFC882 /* Model */,
 				2C6BEDA627BD9BCC00FFC882 /* View */,
 				2C6BEDAD27BDA47100FFC882 /* Controllers */,
-				2C6BEDA527BD9BB300FFC882 /* Support */,
 				2C6BED9227BD931800FFC882 /* Assets.xcassets */,
 				2C6BED9D27BD95CA00FFC882 /* MyNotes.xcdatamodeld */,
 				2C6BED9427BD931800FFC882 /* LaunchScreen.storyboard */,
 				2C6BED9727BD931800FFC882 /* Info.plist */,
-				2C6BEDB627BDC1AD00FFC882 /* Extensions.swift */,
 			);
 			path = "To-Do";
 			sourceTree = "<group>";
@@ -94,12 +98,10 @@
 		2C6BEDA427BD9BA500FFC882 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C6BEDA027BD966800FFC882 /* CoreDataProperties.swift */,
-				2C6BEDB227BDBC1600FFC882 /* Note+CoreDataClass.swift */,
-				2C6BEDB027BDB5AD00FFC882 /* CoreDataManager.swift */,
-				2C6BEDB427BDBEC100FFC882 /* NoteCell.swift */,
-				2C6BEDB827BE994000FFC882 /* TabeViewManager.swift */,
 				2C6BEDBC27BF20AC00FFC882 /* Item.swift */,
+				2C6BEDB227BDBC1600FFC882 /* Note+CoreDataClass.swift */,
+				2C6BEDA027BD966800FFC882 /* CoreDataProperties.swift */,
+				2C6BEDB027BDB5AD00FFC882 /* CoreDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,7 +118,7 @@
 		2C6BEDA627BD9BCC00FFC882 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C6BEDA727BD9C1200FFC882 /* TextField.swift */,
+				2C6BEDA727BD9C1200FFC882 /* CustomTextField.swift */,
 				2C6BEDAB27BDA1FF00FFC882 /* AddButton.swift */,
 				2C6BEDA927BD9EEB00FFC882 /* CustomtextView.swift */,
 			);
@@ -130,6 +132,18 @@
 				2C6BEDAE27BDA49800FFC882 /* NoteVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2CB87F3327C0727300821294 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C6BEDB427BDBEC100FFC882 /* NoteCell.swift */,
+				2C6BEDB627BDC1AD00FFC882 /* Extensions.swift */,
+				2C6BEDB827BE994000FFC882 /* Ext+TabeViewManager.swift */,
+				2CB87F3427C0997400821294 /* Ext+NoteCell.swift */,
+				2CB87F3627C09F2300821294 /* Ext+NoteVC.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,15 +222,17 @@
 				2C6BEDB527BDBEC100FFC882 /* NoteCell.swift in Sources */,
 				2C6BED8A27BD931600FFC882 /* AppDelegate.swift in Sources */,
 				2C6BEDAA27BD9EEB00FFC882 /* CustomtextView.swift in Sources */,
-				2C6BEDA827BD9C1200FFC882 /* TextField.swift in Sources */,
+				2C6BEDA827BD9C1200FFC882 /* CustomTextField.swift in Sources */,
 				2C6BED8C27BD931600FFC882 /* SceneDelegate.swift in Sources */,
 				2C6BEDB727BDC1AD00FFC882 /* Extensions.swift in Sources */,
 				2C6BEDBD27BF20AC00FFC882 /* Item.swift in Sources */,
 				2C6BED9F27BD95CA00FFC882 /* MyNotes.xcdatamodeld in Sources */,
-				2C6BEDB927BE994000FFC882 /* TabeViewManager.swift in Sources */,
+				2C6BEDB927BE994000FFC882 /* Ext+TabeViewManager.swift in Sources */,
 				2C6BEDAF27BDA49800FFC882 /* NoteVC.swift in Sources */,
 				2C6BEDB127BDB5AD00FFC882 /* CoreDataManager.swift in Sources */,
+				2CB87F3727C09F2300821294 /* Ext+NoteVC.swift in Sources */,
 				2C6BEDAC27BDA1FF00FFC882 /* AddButton.swift in Sources */,
+				2CB87F3527C0997400821294 /* Ext+NoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

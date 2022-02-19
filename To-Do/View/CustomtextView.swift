@@ -24,5 +24,4 @@ class CustomtextView: UITextView {
         self.autocorrectionType     = .no
         self.translatesAutoresizingMaskIntoConstraints  = false
     }
-
 }

@@ -9,10 +9,8 @@ import UIKit
 
 class MainVC: UIViewController {
 
-    var searchedNotes = [Note]()
     static var notes = [Note]()
-    
-    var searchController = UISearchController(searchResultsController: nil)
+    // var item = Item.mockData // Item model
         
     var tableView: UITableView?
     let label = UILabel()            // Appears if there's no notes yet
@@ -21,18 +19,17 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-
-        
         definesPresentationContext = true
         
-        setupNavigationController()
+        title = "Todo"
+        
         setupTableView()
         setupButton()
         setupLabel()
-
+        fetchNotesFromStorage()
     }
-
     
+    // Call NoteVC 1
     @objc private func didTapButton() {
         
         let newNote = CoreDataManager.shared.createNote()
@@ -42,7 +39,7 @@ class MainVC: UIViewController {
         tableView!.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
         tableView!.endUpdates()
         
-        let noteVC = NoteViewController()
+        let noteVC = NoteVC()
         noteVC.noteCell = nil
         noteVC.set(noteId: newNote.id)
         noteVC.set(noteCell: (tableView?.cellForRow(at: IndexPath(row: 0, section: 0) ) as! NoteCell))
@@ -50,6 +47,7 @@ class MainVC: UIViewController {
         navigationController?.pushViewController(noteVC, animated: true)
     }
     
+    // Call NoteVC 2
     private func setupButton() {
         view.addSubview(button)
         button.setButtonConstraints(view: view)
@@ -69,16 +67,7 @@ class MainVC: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
-    
-    private func setupNavigationController() {
-        title = "Notes"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.backgroundColor = .systemBackground
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.hidesBarsOnSwipe = true
-        navigationItem.hidesSearchBarWhenScrolling = false
-        navigationItem.searchController = searchController
-    }
 }
+
 
 

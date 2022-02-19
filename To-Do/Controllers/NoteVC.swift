@@ -7,25 +7,31 @@
 
 import UIKit
 
-class NoteViewController: UIViewController {
-    private var noteId: String!
-    private var textView: UITextView!
-    private var textField: UITextField!
-    private var index: Int!
+class NoteVC: UIViewController {
+    
+    var noteId: String!
+    var textView: UITextView!
+    var textField: UITextField!
+    var index: Int!
     var noteCell: NoteCell?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        index = MainVC.notes.firstIndex(where: {$0.id == noteId})!
         view.backgroundColor = .systemBackground
         self.navigationItem.largeTitleDisplayMode = .never
  
+        setupNavigationBarItem()
         setupTextView()
         setupTextField()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
+        let note = MainVC.notes[index]
+        textView.text   = note.text
+        textField.text  = note.title
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -61,36 +67,5 @@ class NoteViewController: UIViewController {
             textField.heightAnchor.constraint(equalToConstant: 30),
             textField.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -70)
         ])
-
     }
-    
-    func set(noteId: String) {
-        self.noteId = noteId
-    }
-    
-    func set(noteCell: NoteCell) {
-        self.noteCell = noteCell
-    }
-}
-
-extension NoteViewController: UITextViewDelegate, UITextFieldDelegate {
-    
-    func textViewDidChange(_ textView: UITextView) {
-        MainVC.notes[index].text = textView.text
-        CoreDataManager.shared.save()
-    }
-    
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        MainVC.notes[index].title = textField.text!
-        CoreDataManager.shared.save()
-    }
-    
-}
-
-extension NoteViewController {
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-    
 }
