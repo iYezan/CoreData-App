@@ -73,12 +73,11 @@ class MainVC: UIViewController, UISearchResultsUpdating {
     
     private func setupNavigationController() {
         title = "Todo"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.backgroundColor = .systemBackground
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.hidesBarsOnSwipe = false
-        navigationItem.hidesSearchBarWhenScrolling = false
-       
+        navigationController?.navigationBar.prefersLargeTitles  = true
+        navigationController?.navigationBar.backgroundColor     = .systemBackground
+        navigationController?.navigationBar.prefersLargeTitles  = true
+        navigationController?.hidesBarsOnSwipe                  = false
+        navigationItem.hidesSearchBarWhenScrolling              = false
     }
     
     // SearchBar design
