@@ -2,4 +2,4 @@
 
 Clone the repository
 
-```$ git clone https://github.com/iYezan/SegmentedControl.git```
+```$ git clone https://github.com/iYezan/To-Do.git```
